@@ -18,7 +18,8 @@ export default {
       white: "#FFFFFF",
       black: "#000000",
       yellow: "#FFD666",
-      blue: "#3F88C5",
+      blue: "#00268A",
+      purple: "#A020F0",
       green: "#00C49A",
       red: "#FF5A5F",
       orange: "#F7931B",
@@ -34,6 +35,7 @@ export default {
       'ant': ["Anton", 'sans-serif'],
 
       'open': ["Open Sans", 'sans-serif'],
+      'mon': ["Montserrat", 'sans-serif'],
 
       'comic': ["Comic Neue", 'cursive'],
       'glo': ["Gloria Hallelujah", 'cursive'],
@@ -42,8 +44,18 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'hero-back': 'url("/assets/images/logo.png")'
+        'hero-banner': 'url("/assets/images/hero-banner.jpg")',
+        'creature-banner': 'url("/assets/images/creature-banner.jpg")',
+        'hero-gradient': 'linear-gradient(to right, #ffc700, #fbd749, #f9e674, #faf39c, #fdffc2);',
+        'card-gradient': 'linear-gradient(to right bottom, #43766c, #63997f, #8dbc8f, #c0df9c, #fdffab);',
       },
+      dropShadow: {
+        brand: "0px 10px 0px #803D3B",
+        logo: "0px 5px 0px #FFD666",
+        img: "0px 10px 20px #FFD666",
+        good: "0px 10px 0px #00C49A",
+        bad: "0px 10px 0px #FF5A5F",
+      }
     },
   },
   plugins: [

@@ -1,11 +1,13 @@
-import React from 'react'
+
+// ASSETS IMPORTS
+import logo from '/assets/images/logo.png';
 
 const Footer = () => {
   return (
-    <footer className='bg-black/40 flex justify-between items-center px-3 py-2 rounded-xl'>
+    <footer className='bg-black flex justify-between items-center px-3 py-2'>
       <div className="flex justify-center items-center">
-        <img className="w-32" src="/assets/images/logo.png" alt="img" />
-        <span className="font-bold text-white text-6xl font-bang">GOEE</span>
+        <img className="w-14 md:w-32 drop-shadow-logo" src={logo} alt="img" />
+        <span className="font-bol text-white text-3xl md:text-6xl font-bang">GOEE</span>
       </div>
       <div>
         <ul className='flex'>

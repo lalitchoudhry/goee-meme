@@ -1,14 +1,26 @@
-import React from "react";
+import { useState } from "react";
+
+// ASSETS IMPORTS
+import logo from "/assets/images/logo.png";
+import menuIconClose from "/assets/icons/book.png";
+import menuIconOpen from "/assets/icons/open-book.png";
 
 const Navbar = () => {
+  // STATES AND VARIABLES
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
-    <header className=" bg-white flex justify-between items-center px-3 py-2 rounded-xl">
-      <div className="flex justify-center items-center">
-        <img className="w-32" src="/assets/images/logo.png" alt="img" />
-        <span className="font-bold text-brand text-6xl font-bang">GOEE</span>
+    <header className="flex justify-between items-center md:px-20 px-5 py-5 bg-black/50">
+      <div className="flex justify-center items-center ">
+        <img className="w-20 md:w-32 drop-shadow-logo " src={logo} alt="img" />
+        <span className="font-bol text-brand text-5xl md:text-6xl font-bang drop-shadow-logo">
+          GOEE
+        </span>
       </div>
       <nav>
-        <ul className="flex child:nav-link">
+        <ul
+          className={`${showMobileMenu ? "w-full absolute left-0 top-20 py-5 text-center bg-brand child:mobile-nav-link z-10" : "hidden md:flex child:nav-link"}`}
+        >
           <li>
             <a href="#">Home</a>
           </li>
@@ -16,7 +28,7 @@ const Navbar = () => {
             <a href="#">The Goddesses</a>
           </li>
           <li>
-            <a href="#">Gallary</a>
+            <a href="#">The Battleground</a>
           </li>
           <li>
             <a href="#">Story</a>
@@ -27,8 +39,22 @@ const Navbar = () => {
         </ul>
       </nav>
       <ul>
-        <li><a className="bg-brand text-white text-2xl font-comic font-semibold px-5 py-2 rounded-3xl hover:bg-white hover:text-orange hover:outline" href="#">Contact</a></li>
+        <li>
+          <a
+            className="text-brand bg-yellow px-4 py-1 text-xl font-bold hidden md:block"
+            href="#"
+          >
+            Contact
+          </a>
+        </li>
       </ul>
+      <div className="md:hidden" onClick={()=>setShowMobileMenu(!showMobileMenu)}>
+        {showMobileMenu ? (
+          <img className="w-10" src={menuIconOpen} alt="icon" />
+        ) : (
+          <img className="w-10" src={menuIconClose} alt="icon" />
+        )}
+      </div>
     </header>
   );
 };
