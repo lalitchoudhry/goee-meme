@@ -1,5 +1,6 @@
 
 // ASSETS IMPORTS
+import warImg from "/assets/images/war.png";
 import birthCardImg from "/assets/images/birth.jpg";
 import manyOneImg from "/assets/images/many-one.jpg";
 import humanImg from "/assets/images/human-dark.jpg";
@@ -9,14 +10,14 @@ import BattleCard from "../components/BattleCard";
 
 const Battleground = () => {
   return (
-    <section className=" text-white md:p-20 p-5">
-      <div>
-        <div className="text-center">
-          <h3 className="font-bold font-fred text-5xl my-5">Witness the Battleground</h3>
-          <p className="underline decoration-purple text-md sm:text-xl">
+    <section className="bg-yellow ">
+      <div className="md:px-20 md:pt-20 pt-5 px-5">
+        <div className="text-center flex flex-col items-center">
+          <h3 className="font-bold font-fred text-brand text-5xl my-5">Witness the Battleground</h3>
+          {/* <p className="w-1/3 text-[#D04848]  text-md sm:text-xl">
             Explore the ongoing clash between these goddesses across various
             stages of evolution
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center my-20">
           <BattleCard
@@ -36,6 +37,7 @@ const Battleground = () => {
           />
         </div>
       </div>
+      <img className="drop-shadow-brand w-full" src={warImg} alt="img" />
     </section>
   );
 };

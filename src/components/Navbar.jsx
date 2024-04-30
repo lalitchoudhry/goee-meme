@@ -10,16 +10,16 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <header className="flex justify-between items-center md:px-20 px-5 py-5 bg-black/50">
+    <header className="flex justify-between items-center md:px-20 px-5 py-5 bg-brand">
       <div className="flex justify-center items-center ">
         <img className="w-20 md:w-32 drop-shadow-logo " src={logo} alt="img" />
-        <span className="font-bol text-brand text-5xl md:text-6xl font-bang drop-shadow-logo">
+        <span className="font-bol text-yellow text-5xl md:text-6xl font-bang drop-shadow-brand">
           GOEE
         </span>
       </div>
       <nav>
         <ul
-          className={`${showMobileMenu ? "w-full absolute left-0 top-20 py-5 text-center bg-brand child:mobile-nav-link z-10" : "hidden md:flex child:nav-link"}`}
+          className={`${showMobileMenu ? "w-full absolute left-0 top-20 py-5 text-center bg-yellow child:mobile-nav-link z-10" : "hidden md:flex child:nav-link"}`}
         >
           <li>
             <a href="#">Home</a>
@@ -30,9 +30,9 @@ const Navbar = () => {
           <li>
             <a href="#">The Battleground</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#">Story</a>
-          </li>
+          </li> */}
           <li>
             <a href="#">About</a>
           </li>
@@ -41,7 +41,7 @@ const Navbar = () => {
       <ul>
         <li>
           <a
-            className="text-brand bg-yellow px-4 py-1 text-xl font-bold hidden md:block"
+            className="text-brown bg-yellow px-4 py-1 text-xl font-bold hidden md:block hover:outline"
             href="#"
           >
             Contact

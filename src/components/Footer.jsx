@@ -11,10 +11,11 @@ const Footer = () => {
       </div>
       <div>
         <ul className='flex'>
-          <li><a className='footer-link' href="#"><i class="bi bi-telegram"></i></a></li>
-          <li><a className='footer-link' href="#"><i class="bi bi-twitter-x"></i></a></li>
-          <li><a className='footer-link' href="#"><i class="bi bi-globe"></i></a></li>
-          <li><a className='footer-link' href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a className='footer-link' href="#"><i className="bi bi-youtube"></i></a></li>
+          <li><a className='footer-link' href="#"><i className="bi bi-telegram"></i></a></li>
+          <li><a className='footer-link' href="#"><i className="bi bi-twitter-x"></i></a></li>
+          <li><a className='footer-link' href="#"><i className="bi bi-globe"></i></a></li>
+          <li><a className='footer-link' href="#"><i className="bi bi-instagram"></i></a></li>
         </ul>
       </div>
     </footer>
