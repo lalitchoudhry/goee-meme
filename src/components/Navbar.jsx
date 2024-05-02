@@ -25,29 +25,19 @@ const Navbar = () => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">The Goddesses</a>
+            <a href="#goddesses">The Goddesses</a>
           </li>
           <li>
-            <a href="#">The Battleground</a>
+            <a href="#battleground">The Battleground</a>
           </li>
           {/* <li>
             <a href="#">Story</a>
           </li> */}
           <li>
-            <a href="#">About</a>
+            <a href="https://www.youtube.com/watch?v=Bbwp4PbWYzw" target="_blank">Watch Story</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a
-            className="text-brown bg-yellow px-4 py-1 text-xl font-bold hidden md:block hover:outline"
-            href="#"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
       <div className="md:hidden" onClick={()=>setShowMobileMenu(!showMobileMenu)}>
         {showMobileMenu ? (
           <img className="w-10" src={menuIconOpen} alt="icon" />

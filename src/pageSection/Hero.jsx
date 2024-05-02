@@ -18,11 +18,11 @@ const Hero = () => {
           to the celestial playground of satire and spirit.
         </p>
         <div className="md:my-10 md:child:mr-5 flex flex-col md:flex-row child:my-5">
-          <PrimaryBtn label="Read Story" />
-          <SecondaryBtn label="Join Community" />
+          <PrimaryBtn label="Watch the Video &#8594;" />
+          {/* <SecondaryBtn label="Join Community" /> */}
         </div>
       </div>
-      <img className="md:w-1/2 drop-shadow-logo hidden md:block" src={bookImg} alt="img" />
+      <img className="md:w-96 md:h-96 lg:w-1/2 drop-shadow-logo hidden md:block" src={bookImg} alt="img" />
     </section>
   );
 };

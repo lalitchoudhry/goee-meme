@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 // SECTIONS IMPORTS
 import Hero from "../pageSection/Hero";
 import Characters from "../pageSection/Characters";
-import About from "../pageSection/About";
+// import About from "../pageSection/About";
 import Battleground from "../pageSection/Battleground";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <Characters />
       <Battleground />
-      <About />
+      {/* <About /> */}
       <Footer />
     </div>
   );
