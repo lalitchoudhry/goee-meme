@@ -2,6 +2,7 @@
   "name": "goddess-of-everything",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://goee.meme/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
