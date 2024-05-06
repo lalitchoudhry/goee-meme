@@ -47,6 +47,24 @@
   }
 
   .footer-link{
-    @apply  md:py-2 md:px-3 mx-1 md:mx-2 text-xl md:text-3xl md:bg-brand text-yellow rounded-full
+    @apply  px-2 py-1 mx-1 md:mx-2 text-3xl text-yellow hover:text-brown hover:bg-yellow rounded-full
+  }
+
+  .mobile-social-link{
+    @apply text-brown
+  }
+
+  .scroll-bar{
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #FFE0B5;
+      border-radius: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #D8AE7E;
+    }
   }
 }

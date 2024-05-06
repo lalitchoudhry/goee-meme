@@ -6,7 +6,7 @@ import bookImg from "/assets/images/book-5.png";
 import PrimaryBtn from "../components/PrimaryBtn";
 import SecondaryBtn from "../components/SecondaryBtn";
 
-const Hero = () => {
+const Hero = ({showYTModel, setShowYTModel}) => {
   return (
     <section className="flex justify-between md:p-20 p-5 ">
       <div className=" text-center md:text-left">
@@ -18,7 +18,7 @@ const Hero = () => {
           to the celestial playground of satire and spirit.
         </p>
         <div className="md:my-10 md:child:mr-5 flex flex-col md:flex-row child:my-5">
-          <PrimaryBtn label="Watch the Video &#8594;" />
+          <PrimaryBtn label="Watch the Video" showYTModel={showYTModel} setShowYTModel={setShowYTModel} />
           {/* <SecondaryBtn label="Join Community" /> */}
         </div>
       </div>

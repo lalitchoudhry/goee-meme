@@ -4,7 +4,7 @@ import evilGod from "/assets/images/evil-2.png";
 import cancerGod from "/assets/images/cancer.png";
 import SecondaryBtn from "../components/SecondaryBtn";
 
-const Characters = () => {
+const Characters = ({showYTModel, setShowYTModel}) => {
   return (
     <section id="goddesses" className="bg-light flex justify-center items-center flex-col">
       <img className="w-full" src={cancerGod} alt="img" />
@@ -18,17 +18,17 @@ const Characters = () => {
               A Cosmic Tug-of-War
             </span>
           </h3>
-          <p className="text-base md:text-xl font-mon text-center text-white font-bold my-5 underline">
+          <p className="w-2/3 md:w-full text-base md:text-xl font-mon text-center text-white font-semibold my-5 underline">
             Uncover the Hidden Forces Shaping Our Universe
           </p>
-          <div className="my-10">
-            <SecondaryBtn label="Watch the Battleground &#8594;" />
+          <div className="my-5 md:my-10">
+            <SecondaryBtn label="Watch the Battleground" showYTModel={showYTModel} setShowYTModel={setShowYTModel}/>
           </div>
         </div>
         <div className="md:py-20 ">
           <div className="flex flex-col md:flex-row justify-between items-center py-20">
             <div className="text-center">
-              <h4 className="text-3xl md:text-4xl text-white font-bang underline decoration-4 decoration-brand  my-5">
+              <h4 className="text-3xl md:text-4xl text-white font-bang underline decoration-4 decoration-brown  my-5">
                 Goddess Of Everything
               </h4>
               <p className="hidden md:block text-white font-light md:text-3xl my-5">
@@ -49,7 +49,7 @@ const Characters = () => {
 
           <div className="flex flex-col md:flex-row-reverse justify-between items-center py-20 border-t-purple border-t-4 md:border-none">
             <div className="md:w-1/2 text-center">
-              <h4 className=" text-white font-bang text-3xl md:text-4xl underline decoration-4 decoration-brand my-5">
+              <h4 className=" text-white font-bang text-3xl md:text-4xl underline decoration-4 decoration-brown my-5">
                 Goddess Of Cancer
               </h4>
               <p className="hidden md:block text-white font-light md:text-3xl my-5">

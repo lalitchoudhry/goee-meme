@@ -13,13 +13,17 @@ const Navbar = () => {
     <header className="flex justify-between items-center md:px-20 px-5 py-5 bg-brand">
       <div className="flex justify-center items-center ">
         <img className="w-20 md:w-32 drop-shadow-logo " src={logo} alt="img" />
-        <span className="font-bol text-yellow text-5xl md:text-6xl font-bang drop-shadow-brand">
+        <span className=" text-yellow text-5xl md:text-6xl font-bang drop-shadow-brand">
           GOEE
         </span>
       </div>
       <nav>
         <ul
-          className={`${showMobileMenu ? "w-full absolute left-0 top-20 py-5 text-center bg-yellow child:mobile-nav-link z-10" : "hidden md:flex child:nav-link"}`}
+          className={`${
+            showMobileMenu
+              ? "w-full absolute left-0 top-20 py-5 text-center bg-yellow child:mobile-nav-link z-10"
+              : "hidden md:flex child:nav-link"
+          }`}
         >
           <li>
             <a href="#">Home</a>
@@ -30,19 +34,39 @@ const Navbar = () => {
           <li>
             <a href="#battleground">The Battleground</a>
           </li>
-          {/* <li>
-            <a href="#">Story</a>
-          </li> */}
           <li>
-            <a href="https://www.youtube.com/watch?v=Bbwp4PbWYzw" target="_blank">Watch Story</a>
+            <a href="#paper">Bright Paper</a>
           </li>
         </ul>
       </nav>
-      <div className="md:hidden" onClick={()=>setShowMobileMenu(!showMobileMenu)}>
+      <ul className="md:flex hidden">
+        <li>
+          <a className="footer-link" href="https://t.me/goee_coin">
+            <i className="bi bi-telegram"></i>
+          </a>
+        </li>
+        <li>
+          <a className="footer-link" href="https://twitter.com/GOEE_Coin">
+            <i className="bi bi-twitter-x"></i>
+          </a>
+        </li>
+      </ul>
+      <div
+        className="md:hidden"
+        onClick={() => setShowMobileMenu(!showMobileMenu)}
+      >
         {showMobileMenu ? (
-          <img className="w-10" src={menuIconOpen} alt="icon" />
+          <img
+            className="w-10 drop-shadow-brand"
+            src={menuIconOpen}
+            alt="icon"
+          />
         ) : (
-          <img className="w-10" src={menuIconClose} alt="icon" />
+          <img
+            className="w-10 drop-shadow-brand"
+            src={menuIconClose}
+            alt="icon"
+          />
         )}
       </div>
     </header>

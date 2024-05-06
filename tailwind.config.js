@@ -8,10 +8,11 @@ export default {
     screens: {
       'xs': '480px',
       'sm': '640px',
-      'md': '768px',
+      'md': '770px',
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
+      '3xl': '1650px',
     },
     colors:{
       brand: "#D37676",
@@ -37,6 +38,8 @@ export default {
 
       // 'open': ["Open Sans", 'sans-serif'],
       'mon': ["Montserrat", 'sans-serif'],
+      'dance': ["Dancing Script, cursive"],
+      'im': ["IM Fell DW Pica SC, serif"],
 
       'comic': ["Comic Neue", 'cursive'],
       // 'glo': ["Gloria Hallelujah", 'cursive'],
@@ -44,10 +47,8 @@ export default {
       // 'paci': ["Pacifico", 'cursive'],
     },
     extend: {
-      backgroundImage: {
-        // 'hero-banner': 'url("/assets/images/hero-banner.jpg")',
-        'creature-banner': 'url("/assets/images/creature-banner.jpg")',
-        'card-gradient': 'linear-gradient(to right bottom, #43766c, #63997f, #8dbc8f, #c0df9c, #fdffab);',
+      boxShadow: {
+        'spread': "-1px -1px 51px -12px #FFC700;"
       },
       dropShadow: {
         brand: "0px 10px 0px #803D3B",

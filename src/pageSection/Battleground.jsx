@@ -1,25 +1,18 @@
-
 // ASSETS IMPORTS
 import warImg from "/assets/images/war.png";
-import birthCardImg from "/assets/images/birth.jpg";
-import manyOneImg from "/assets/images/many-one.jpg";
-import humanImg from "/assets/images/human-dark.jpg";
 
 // COMPONENTS IMPORTS
-import BattleCard from "../components/BattleCard";
 
 const Battleground = () => {
   return (
     <section id="battleground" className="bg-yellow ">
-      <div className="md:px-20 md:pt-20 pt-5 px-5">
+      <div className="md:px-20 md:pt-20 pt-5 px-5 flex flex-col items-center justify-center">
         <div className="text-center flex flex-col items-center">
-          <h3 className="font-bold font-fred text-brand text-5xl my-5">Witness the Battleground</h3>
-          {/* <p className="w-1/3 text-[#D04848]  text-md sm:text-xl">
-            Explore the ongoing clash between these goddesses across various
-            stages of evolution
-          </p> */}
+          <h3 className="font-semibold font-fred text-brown text-5xl my-5">
+            Witness the Battleground
+          </h3>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center my-20">
+        {/* <div className="flex flex-col md:flex-row justify-between items-center my-20">
           <BattleCard
             title="The Birth of Complexity"
             description="Dive into the primordial soup where single-celled creatures become tangled in the goddesses' machinations."
@@ -38,6 +31,14 @@ const Battleground = () => {
             img={humanImg}
             timeStamp={720}
           />
+        </div> */}
+        <div className="my-10 md:mx-10 w-full  xl:w-2/3">
+          <figure className="w-full drop-shadow-brand">
+            <iframe
+              src="https://www.youtube.com/embed/Bbwp4PbWYzw?autoplay=1"
+              className="w-full h-[200px] sm:h-[300px] md:h-[400px] xl:h-[500px] 3xl:h-[900px]"
+            ></iframe>
+          </figure>
         </div>
       </div>
       <img className="drop-shadow-brand w-full" src={warImg} alt="img" />
